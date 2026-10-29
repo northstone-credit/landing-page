@@ -1,0 +1,14 @@
+# Northstone landing page
+
+Static site: no build step, no dependencies. Open `index.html`, or run `python3 -m http.server 8000` in this folder (http://localhost:8000).
+
+| Path | What |
+|---|---|
+| `index.html` | All content (Spanish) |
+| `css/tokens.css` | Colours, fonts, spacing. Source: the brand manual |
+| `css/base.css` | Reset, typography, buttons, layout primitives |
+| `css/sections.css` | One block per section, in page order |
+| `js/main.js` | Mobile menu and contact form |
+| `assets/` | Logos exported from the brand manual, and `hero.jpg` |
+
+Fonts: Baskerville and Helvetica Neue are system fonts (macOS/iOS). Other systems fall back to Georgia and Arial until the font licence and hosting are decided.

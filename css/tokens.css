@@ -1,0 +1,30 @@
+/* Design tokens. Source of truth: ../BRAND.txt (colours and typography from BrandManual_Northstone.pdf).
+   Use only these four colours. */
+:root {
+  --white: #ffffff;
+  --platinum: #ebebeb;
+  --graphite: #3a3a38;
+  --tan: #d7ba8f;
+
+  /* Graphite at reduced opacity for secondary text; avoids introducing a fifth colour */
+  --graphite-soft: rgba(58, 58, 56, 0.74);
+  --white-soft: rgba(255, 255, 255, 0.74);
+  --line: rgba(58, 58, 56, 0.16);
+  --line-on-dark: rgba(255, 255, 255, 0.18);
+
+  /* Manual: Baskerville for headlines and body, Helvetica for details.
+     Georgia/Arial are fallbacks for systems without them (e.g. Windows has no Baskerville). */
+  --font-serif: Baskerville, "Baskerville Old Face", "Libre Baskerville", Georgia, serif;
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6.5rem;
+
+  --radius: 6px;
+  --container: 72.5rem;
+  --header-height: 4.5rem;
+}

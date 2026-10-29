@@ -1,0 +1,73 @@
+/* Reset, typography, layout primitives and buttons. Nothing section-specific here. */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: var(--header-height); }
+
+body {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--graphite);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { display: block; max-width: 100%; }
+
+h1, h2, h3 { font-weight: 400; line-height: 1.15; margin: 0; }
+h1 { font-size: clamp(2.5rem, 5.2vw, 4rem); letter-spacing: -0.01em; }
+h2 { font-size: clamp(1.9rem, 3.4vw, 2.75rem); letter-spacing: -0.005em; }
+h3 { font-size: 1.375rem; line-height: 1.25; }
+p { margin: 0; }
+
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--graphite); outline-offset: 3px; }
+.on-dark :focus-visible { outline-color: var(--tan); }
+
+.container { width: min(100% - 2rem, var(--container)); margin-inline: auto; }
+
+.section { padding-block: var(--space-6); }
+.section--platinum { background: var(--platinum); }
+.section--dark { background: var(--graphite); color: var(--white); }
+.section--dark .lead, .section--dark p { color: var(--white-soft); }
+
+/* Small uppercase label in the "details" typeface */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-2);
+}
+.section--dark .eyebrow { color: var(--tan); }
+
+.section-head { max-width: 46rem; margin-bottom: var(--space-5); }
+.section-head h2 + .lead { margin-top: var(--space-2); }
+.lead { font-size: 1.25rem; color: var(--graphite-soft); }
+
+.button {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--graphite);
+  background: var(--graphite);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+.button:hover { background: var(--white); color: var(--graphite); }
+.button--tan { background: var(--tan); border-color: var(--tan); color: var(--graphite); }
+.button--tan:hover { background: transparent; color: var(--tan); }
+.button--outline-light { background: transparent; border-color: var(--white); color: var(--white); }
+.button--outline-light:hover { background: var(--white); color: var(--graphite); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
