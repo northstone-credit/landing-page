@@ -12,3 +12,11 @@ Static site: no build step, no dependencies. Open `index.html`, or run `python3 
 | `assets/` | Logos exported from the brand manual, and `hero.jpg` |
 
 Fonts: Baskerville and Helvetica Neue are system fonts (macOS/iOS). Other systems fall back to Georgia and Arial until the font licence and hosting are decided.
+
+## Deploy
+
+Published with GitHub Pages from the `main` branch, folder `/` (root). No build step and no GitHub Actions. Custom domain: `northstonecredit.com` (`CNAME` file at the root, containing only the domain), with DNS on Cloudflare pointing to GitHub Pages.
+
+To update the site: edit, commit and push to `main`, then wait about 1 minute.
+
+Pages serves every file in the repo, including `README.md` and `TASKS.md`, at `northstonecredit.com/<file>`. Keep anything internal out of this repo.
