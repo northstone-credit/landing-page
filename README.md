@@ -19,4 +19,4 @@ Published with GitHub Pages from the `main` branch, folder `/` (root). No build 
 
 To update the site: edit, commit and push to `main`, then wait about 1 minute.
 
-Pages serves every file in the repo, including `README.md` and `TASKS.md`, at `northstonecredit.com/<file>`. Keep anything internal out of this repo.
+Pages serves every file in the repo, including `README.md`, at `northstonecredit.com/<file>`. Keep anything internal out of this repo.
