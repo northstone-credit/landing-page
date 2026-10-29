@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="240" viewBox="0 0 240 240">
-  <title>Icon tile</title>
-  <g id="Layer_1" data-name="Layer 1">
-    <path id="tile" d="M65.77 49.82 L174.23 49.82 C183.039 49.82 190.18 56.961 190.18 65.77 L190.18 174.23 C190.18 183.039 183.039 190.18 174.23 190.18 L65.77 190.18 C56.961 190.18 49.82 183.039 49.82 174.23 L49.82 65.77 C49.82 56.961 56.961 49.82 65.77 49.82 Z" fill="#d7ba8f"/>
-    <path id="mark" d="M120 82.49 L164.25 108.04 L164.25 131.96 L120 157.51 L120 133.59 L143.55 120 L120 106.41 L75.75 131.96 L75.75 108.04 Z" fill="#3a3a38"/>
-  </g>
-</svg>

@@ -9,7 +9,8 @@ Static site: no build step, no dependencies. Open `index.html`, or run `python3 
 | `css/base.css` | Reset, typography, buttons, layout primitives |
 | `css/sections.css` | One block per section, in page order |
 | `js/main.js` | Mobile menu and contact form |
-| `assets/` | Logos exported from the brand manual, and `hero.jpg` |
+| `assets/` | Logos exported from the brand manual, `hero.jpg`, `favicon.svg`, `og-image.jpg` (1200x630 social preview) |
+| `favicon.ico`, `apple-touch-icon.png` | Root-level icons; browsers and iOS look for them there |
 
 Fonts: Baskerville and Helvetica Neue are system fonts (macOS/iOS). Other systems fall back to Georgia and Arial until the font licence and hosting are decided.
 
